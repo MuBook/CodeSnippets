@@ -1,6 +1,5 @@
-var expandable = angular.module('expandable', []);
-
-expandable.directive("expandable", function() {
+angular.module('expandable', [])
+.directive("expandable", function() {
   return {
     scope: {
       widthMin: "@",
@@ -41,9 +40,8 @@ expandable.directive("expandable", function() {
       };
     }
   };
-});
-
-expandable.directive("expandableTrigger", function() {
+})
+.directive("expandableTrigger", function() {
   return {
     scope: false,
     restrict: "A",
